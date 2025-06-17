@@ -1,0 +1,211 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden    ;
+}
+
+.outline{
+    outline: 1px solid lime;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    margin: 2rem 15rem;
+    font-size: 3.6rem;
+}
+
+.nav-link{
+    display: block;
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.nav-actionables{
+    gap: 1.2rem;
+}
+
+.nav-actionables-buttons {
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 
+      background-color 0.3s ease, 
+      color 0.3s ease, 
+      transform 0.2s ease;
+  }
+  
+  .nav-actionables-buttons:hover,
+  .nav-actionables-buttons-active {
+    color: white;
+    background-color: #D937ED;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(217, 55, 237, 0.3);
+  }
+  
+
+.main-section{
+    height: 410px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://img.freepik.com/premium-photo/office-working-desk-top-view_127657-9640.jpg?w=2000);
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 10rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+}
+
+.main-section-title{
+    font-size: 12rem;
+    text-transform: uppercase;
+    /* margin-bottom: 4rem; */
+}
+
+.main-section-desp{
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.main-section-button {
+    padding: 1.6rem 3.6rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    color: #fff;
+    cursor: pointer;
+  
+    transition: 
+      transform 0.2s ease, 
+      box-shadow 0.3s ease, 
+      background-color 0.3s ease, 
+      color 0.3s ease;
+  }
+  
+  .main-section-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  
+  .main-section-button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+  .followup-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    height: 475px;
+  }
+  
+  .followup-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 7rem;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+    max-height: 480px;
+  }
+  
+  .followup-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .followup-card-subtitle {
+    font-size: 1.8rem;
+    /* font-weight: 300; */
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .followup-card-title {
+    font-size: 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .followup-card-desp {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  
+  .custom-line {
+    width: 30%;
+    margin-bottom: 2.4rem;
+  }
+  
+  .primary-line {
+    border: 2px solid #D937ED;
+  }
+  
+  .white-line {
+    border: 2px solid #fff;
+  }
+
+  .followup-card-number {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: -2rem;
+    right: 2rem;
+    font-size: 30rem;
+    /* font-weight: 700; */
+    opacity: 0.08;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+
+  .secondary-card {
+    background-color: #D937ED;
+    color: #fff;
+  }
+  
+  .tertiary-card {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .secondary-card .followup-card-subtitle,
+  .tertiary-card .followup-card-subtitle {
+    color: #e0e0e0;
+  }
+  
+
+  
